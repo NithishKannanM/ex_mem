@@ -1,0 +1,826 @@
+{
+ "dataset.json": {
+  "accuracy": 1.0,
+  "false_conflict_rate": 0.0,
+  "miss_rate": 0.0,
+  "p50_latency_ms": 7374.61,
+  "p95_latency_ms": 8662.78,
+  "per_category_accuracy": {
+   "unrelated": 1.0,
+   "related_new": 1.0,
+   "duplicate": 1.0,
+   "contradiction": 1.0,
+   "retraction": 1.0
+  },
+  "predictions": [
+   {
+    "predicted": "ADD",
+    "expected": "ADD",
+    "latency_ms": 16.660430002957582,
+    "category": "unrelated",
+    "incoming": "User enjoys hiking on weekends",
+    "existing": [
+     "User prefers Python for scripting"
+    ]
+   },
+   {
+    "predicted": "ADD",
+    "expected": "ADD",
+    "latency_ms": 16.571426996961236,
+    "category": "unrelated",
+    "incoming": "User is allergic to peanuts",
+    "existing": [
+     "User works at a small startup"
+    ]
+   },
+   {
+    "predicted": "ADD",
+    "expected": "ADD",
+    "latency_ms": 15.879030004725792,
+    "category": "unrelated",
+    "incoming": "User has a younger sister",
+    "existing": [
+     "User uses vim as primary editor"
+    ]
+   },
+   {
+    "predicted": "ADD",
+    "expected": "ADD",
+    "latency_ms": 14.356180996401235,
+    "category": "unrelated",
+    "incoming": "User plays chess competitively",
+    "existing": [
+     "User has 5 years of Go experience"
+    ]
+   },
+   {
+    "predicted": "ADD",
+    "expected": "ADD",
+    "latency_ms": 16.75961000000825,
+    "category": "unrelated",
+    "incoming": "User prefers dark roast coffee",
+    "existing": [
+     "User lives in Berlin"
+    ]
+   },
+   {
+    "predicted": "ADD",
+    "expected": "ADD",
+    "latency_ms": 16.04658300493611,
+    "category": "unrelated",
+    "incoming": "User's favourite film is Blade Runner",
+    "existing": [
+     "User is learning Rust"
+    ]
+   },
+   {
+    "predicted": "ADD",
+    "expected": "ADD",
+    "latency_ms": 4893.3101060029,
+    "category": "related_new",
+    "incoming": "User also uses Python for web backends with FastAPI",
+    "existing": [
+     "User uses Python for data work"
+    ]
+   },
+   {
+    "predicted": "ADD",
+    "expected": "ADD",
+    "latency_ms": 8123.47589500132,
+    "category": "related_new",
+    "incoming": "User likes large monospace fonts in editors",
+    "existing": [
+     "User likes dark mode in editors"
+    ]
+   },
+   {
+    "predicted": "ADD",
+    "expected": "ADD",
+    "latency_ms": 8015.939746001095,
+    "category": "related_new",
+    "incoming": "User has a cat named Luna",
+    "existing": [
+     "User has a dog named Max"
+    ]
+   },
+   {
+    "predicted": "ADD",
+    "expected": "ADD",
+    "latency_ms": 7808.578329000738,
+    "category": "related_new",
+    "incoming": "User is also learning Haskell",
+    "existing": [
+     "User is learning Rust"
+    ]
+   },
+   {
+    "predicted": "NOOP",
+    "expected": "NOOP",
+    "latency_ms": 21.31770500272978,
+    "category": "duplicate",
+    "incoming": "User prefers dark mode",
+    "existing": [
+     "User prefers dark mode"
+    ]
+   },
+   {
+    "predicted": "NOOP",
+    "expected": "NOOP",
+    "latency_ms": 26.519731000007596,
+    "category": "duplicate",
+    "incoming": "User has five years of Python experience",
+    "existing": [
+     "User has 5 years of Python experience"
+    ]
+   },
+   {
+    "predicted": "NOOP",
+    "expected": "NOOP",
+    "latency_ms": 23.02134699857561,
+    "category": "duplicate",
+    "incoming": "User is a data engineer",
+    "existing": [
+     "User works as a data engineer"
+    ]
+   },
+   {
+    "predicted": "NOOP",
+    "expected": "NOOP",
+    "latency_ms": 29.465346000506543,
+    "category": "duplicate",
+    "incoming": "User dislikes writing boilerplate code",
+    "existing": [
+     "User dislikes boilerplate code"
+    ]
+   },
+   {
+    "predicted": "NOOP",
+    "expected": "NOOP",
+    "latency_ms": 28.503524998086505,
+    "category": "duplicate",
+    "incoming": "User lives in Berlin, Germany",
+    "existing": [
+     "User lives in Berlin"
+    ]
+   },
+   {
+    "predicted": "UPDATE",
+    "expected": "UPDATE",
+    "latency_ms": 7257.435246996465,
+    "category": "contradiction",
+    "incoming": "User switched to Go and no longer uses Python",
+    "existing": [
+     "User prefers Python for all projects"
+    ]
+   },
+   {
+    "predicted": "UPDATE",
+    "expected": "UPDATE",
+    "latency_ms": 7402.741278994654,
+    "category": "contradiction",
+    "incoming": "User moved to Lisbon",
+    "existing": [
+     "User lives in Berlin"
+    ]
+   },
+   {
+    "predicted": "UPDATE",
+    "expected": "UPDATE",
+    "latency_ms": 7769.595637000748,
+    "category": "contradiction",
+    "incoming": "User now works at Globex",
+    "existing": [
+     "User works at Acme Corp"
+    ]
+   },
+   {
+    "predicted": "UPDATE",
+    "expected": "UPDATE",
+    "latency_ms": 8044.781158998376,
+    "category": "contradiction",
+    "incoming": "User is now an expert Python developer",
+    "existing": [
+     "User is a Python beginner"
+    ]
+   },
+   {
+    "predicted": "UPDATE",
+    "expected": "UPDATE",
+    "latency_ms": 8154.175499003031,
+    "category": "contradiction",
+    "incoming": "User prefers light mode now",
+    "existing": [
+     "User likes dark mode"
+    ]
+   },
+   {
+    "predicted": "UPDATE",
+    "expected": "UPDATE",
+    "latency_ms": 7374.6130610015825,
+    "category": "contradiction",
+    "incoming": "User switched to Neovim as primary editor",
+    "existing": [
+     "User uses VSCode as primary editor"
+    ]
+   },
+   {
+    "predicted": "UPDATE",
+    "expected": "UPDATE",
+    "latency_ms": 7598.715960004483,
+    "category": "contradiction",
+    "incoming": "User started eating meat again",
+    "existing": [
+     "User is vegetarian"
+    ]
+   },
+   {
+    "predicted": "DELETE",
+    "expected": "DELETE",
+    "latency_ms": 9082.15693099919,
+    "category": "retraction",
+    "incoming": "User gave up on learning Rust entirely",
+    "existing": [
+     "User is learning Rust"
+    ]
+   },
+   {
+    "predicted": "DELETE",
+    "expected": "DELETE",
+    "latency_ms": 8662.77988600632,
+    "category": "retraction",
+    "incoming": "User no longer has a dog",
+    "existing": [
+     "User has a dog named Max"
+    ]
+   },
+   {
+    "predicted": "DELETE",
+    "expected": "DELETE",
+    "latency_ms": 7521.495442000742,
+    "category": "retraction",
+    "incoming": "User does not play guitar anymore",
+    "existing": [
+     "User plays guitar"
+    ]
+   },
+   {
+    "predicted": "DELETE",
+    "expected": "DELETE",
+    "latency_ms": 8364.838663001137,
+    "category": "retraction",
+    "incoming": "User cancelled marathon training",
+    "existing": [
+     "User is training for a marathon"
+    ]
+   }
+  ]
+ },
+ "dataset_heldout.json": {
+  "accuracy": 0.917,
+  "false_conflict_rate": 0.0,
+  "miss_rate": 0.083,
+  "p50_latency_ms": 8048.28,
+  "p95_latency_ms": 10585.92,
+  "per_category_accuracy": {
+   "contradiction": 0.75,
+   "retraction": 1.0,
+   "duplicate": 1.0,
+   "related_new": 1.0,
+   "unrelated": 1.0
+  },
+  "predictions": [
+   {
+    "predicted": "UPDATE",
+    "expected": "UPDATE",
+    "latency_ms": 8264.813228001003,
+    "category": "contradiction",
+    "incoming": "User's favourite language is now Kotlin",
+    "existing": [
+     "User's favourite language is Java"
+    ]
+   },
+   {
+    "predicted": "UPDATE",
+    "expected": "UPDATE",
+    "latency_ms": 6993.895011997665,
+    "category": "contradiction",
+    "incoming": "User switched to commuting by bicycle",
+    "existing": [
+     "User commutes by car"
+    ]
+   },
+   {
+    "predicted": "ADD",
+    "expected": "UPDATE",
+    "latency_ms": 22.44614899973385,
+    "category": "contradiction",
+    "incoming": "User got married last month",
+    "existing": [
+     "User is single"
+    ]
+   },
+   {
+    "predicted": "UPDATE",
+    "expected": "UPDATE",
+    "latency_ms": 8048.279766000633,
+    "category": "contradiction",
+    "incoming": "User replaced Windows with Linux on their laptop",
+    "existing": [
+     "User uses Windows on their laptop"
+    ]
+   },
+   {
+    "predicted": "DELETE",
+    "expected": "DELETE",
+    "latency_ms": 9545.323596001253,
+    "category": "retraction",
+    "incoming": "User quit the pottery class",
+    "existing": [
+     "User is taking a pottery class"
+    ]
+   },
+   {
+    "predicted": "DELETE",
+    "expected": "DELETE",
+    "latency_ms": 9868.898957996862,
+    "category": "retraction",
+    "incoming": "User sold their motorcycle and does not own one now",
+    "existing": [
+     "User owns a motorcycle"
+    ]
+   },
+   {
+    "predicted": "NOOP",
+    "expected": "NOOP",
+    "latency_ms": 20.398852000653278,
+    "category": "duplicate",
+    "incoming": "User is fluent in Spanish",
+    "existing": [
+     "User speaks fluent Spanish"
+    ]
+   },
+   {
+    "predicted": "NOOP",
+    "expected": "NOOP",
+    "latency_ms": 27.609933000348974,
+    "category": "duplicate",
+    "incoming": "User has green tea each morning",
+    "existing": [
+     "User drinks green tea every morning"
+    ]
+   },
+   {
+    "predicted": "ADD",
+    "expected": "ADD",
+    "latency_ms": 9484.921376002603,
+    "category": "related_new",
+    "incoming": "User likes fantasy novels too",
+    "existing": [
+     "User likes sci-fi novels"
+    ]
+   },
+   {
+    "predicted": "ADD",
+    "expected": "ADD",
+    "latency_ms": 10585.918387994752,
+    "category": "related_new",
+    "incoming": "User uses Kubernetes in production",
+    "existing": [
+     "User uses Docker for development"
+    ]
+   },
+   {
+    "predicted": "ADD",
+    "expected": "ADD",
+    "latency_ms": 25.115962998825125,
+    "category": "unrelated",
+    "incoming": "User's birthday is in March",
+    "existing": [
+     "User works remotely"
+    ]
+   },
+   {
+    "predicted": "ADD",
+    "expected": "ADD",
+    "latency_ms": 26.205995003692806,
+    "category": "unrelated",
+    "incoming": "User is saving money for a house",
+    "existing": [
+     "User prefers tabs over spaces"
+    ]
+   }
+  ]
+ },
+ "dataset_heldout2.json": {
+  "accuracy": 0.872,
+  "false_conflict_rate": 0.051,
+  "miss_rate": 0.026,
+  "p50_latency_ms": 9887.36,
+  "p95_latency_ms": 11827.9,
+  "per_category_accuracy": {
+   "duplicate": 0.625,
+   "related_new": 1.0,
+   "unrelated": 1.0,
+   "contradiction": 0.9,
+   "retraction": 0.875
+  },
+  "predictions": [
+   {
+    "predicted": "UPDATE",
+    "expected": "NOOP",
+    "latency_ms": 9983.68616800144,
+    "category": "duplicate",
+    "incoming": "User works on backend systems at a fintech firm",
+    "existing": [
+     "User is a backend engineer at a fintech company"
+    ]
+   },
+   {
+    "predicted": "NOOP",
+    "expected": "NOOP",
+    "latency_ms": 10226.305196003523,
+    "category": "duplicate",
+    "incoming": "User has a decade of programming experience",
+    "existing": [
+     "User has been programming for ten years"
+    ]
+   },
+   {
+    "predicted": "UPDATE",
+    "expected": "NOOP",
+    "latency_ms": 10173.304395000741,
+    "category": "duplicate",
+    "incoming": "User cannot eat shellfish because of an allergy",
+    "existing": [
+     "User is allergic to shellfish"
+    ]
+   },
+   {
+    "predicted": "NOOP",
+    "expected": "NOOP",
+    "latency_ms": 28.481476998422295,
+    "category": "duplicate",
+    "incoming": "User likes using keyboard shortcuts rather than a mouse",
+    "existing": [
+     "User prefers keyboard shortcuts over the mouse"
+    ]
+   },
+   {
+    "predicted": "NOOP",
+    "expected": "NOOP",
+    "latency_ms": 18.778516998281702,
+    "category": "duplicate",
+    "incoming": "User resides in Toronto",
+    "existing": [
+     "User lives in Toronto",
+     "User likes hockey"
+    ]
+   },
+   {
+    "predicted": "ADD",
+    "expected": "NOOP",
+    "latency_ms": 8929.041949995735,
+    "category": "duplicate",
+    "incoming": "User is taking up the violin",
+    "existing": [
+     "User is learning to play the violin"
+    ]
+   },
+   {
+    "predicted": "NOOP",
+    "expected": "NOOP",
+    "latency_ms": 7049.377919996914,
+    "category": "duplicate",
+    "incoming": "User gets up at six in the morning daily",
+    "existing": [
+     "User wakes up at 6am every day"
+    ]
+   },
+   {
+    "predicted": "NOOP",
+    "expected": "NOOP",
+    "latency_ms": 32.167809004022274,
+    "category": "duplicate",
+    "incoming": "User's team has Postgres as the primary database",
+    "existing": [
+     "User's team uses Postgres as its main database"
+    ]
+   },
+   {
+    "predicted": "ADD",
+    "expected": "ADD",
+    "latency_ms": 9090.856727001665,
+    "category": "related_new",
+    "incoming": "User uses SQLite for side projects",
+    "existing": [
+     "User uses Postgres at work"
+    ]
+   },
+   {
+    "predicted": "ADD",
+    "expected": "ADD",
+    "latency_ms": 26.940236995869782,
+    "category": "related_new",
+    "incoming": "User swims on weekends",
+    "existing": [
+     "User runs 5km every morning"
+    ]
+   },
+   {
+    "predicted": "ADD",
+    "expected": "ADD",
+    "latency_ms": 9678.542898996966,
+    "category": "related_new",
+    "incoming": "User is learning Japanese as well",
+    "existing": [
+     "User is learning Spanish"
+    ]
+   },
+   {
+    "predicted": "ADD",
+    "expected": "ADD",
+    "latency_ms": 9600.618413998745,
+    "category": "related_new",
+    "incoming": "User has a brother named Arjun",
+    "existing": [
+     "User has a sister named Priya"
+    ]
+   },
+   {
+    "predicted": "ADD",
+    "expected": "ADD",
+    "latency_ms": 9435.470458003692,
+    "category": "related_new",
+    "incoming": "User likes Thai food",
+    "existing": [
+     "User likes Italian food"
+    ]
+   },
+   {
+    "predicted": "ADD",
+    "expected": "ADD",
+    "latency_ms": 10663.765006996982,
+    "category": "related_new",
+    "incoming": "User uses TypeScript for frontend work",
+    "existing": [
+     "User uses Python at work",
+     "User uses Go for side projects"
+    ]
+   },
+   {
+    "predicted": "ADD",
+    "expected": "ADD",
+    "latency_ms": 9997.474666000926,
+    "category": "related_new",
+    "incoming": "User is reading a novel before bed",
+    "existing": [
+     "User is reading a book on distributed systems"
+    ]
+   },
+   {
+    "predicted": "ADD",
+    "expected": "ADD",
+    "latency_ms": 10794.00361700391,
+    "category": "related_new",
+    "incoming": "User owns a desktop running Windows",
+    "existing": [
+     "User owns a laptop running Linux"
+    ]
+   },
+   {
+    "predicted": "ADD",
+    "expected": "ADD",
+    "latency_ms": 11827.898937997816,
+    "category": "unrelated",
+    "incoming": "User is afraid of heights",
+    "existing": [
+     "User lives in Pune",
+     "User works in finance"
+    ]
+   },
+   {
+    "predicted": "ADD",
+    "expected": "ADD",
+    "latency_ms": 24.16159200220136,
+    "category": "unrelated",
+    "incoming": "User's favourite colour is green",
+    "existing": [
+     "User prefers concise answers"
+    ]
+   },
+   {
+    "predicted": "ADD",
+    "expected": "ADD",
+    "latency_ms": 9887.357936997432,
+    "category": "unrelated",
+    "incoming": "User plays the tabla",
+    "existing": [
+     "User is a vegetarian"
+    ]
+   },
+   {
+    "predicted": "ADD",
+    "expected": "ADD",
+    "latency_ms": 9305.589033996512,
+    "category": "unrelated",
+    "incoming": "User has a motorbike",
+    "existing": [
+     "User is preparing for the GRE"
+    ]
+   },
+   {
+    "predicted": "ADD",
+    "expected": "ADD",
+    "latency_ms": 23.197201000584755,
+    "category": "unrelated",
+    "incoming": "User is building a RAG project",
+    "existing": [
+     "User likes jazz",
+     "User drinks black coffee"
+    ]
+   },
+   {
+    "predicted": "ADD",
+    "expected": "UPDATE",
+    "latency_ms": 10152.955904006376,
+    "category": "contradiction",
+    "incoming": "User joined Microsoft last week",
+    "existing": [
+     "User works at Google"
+    ]
+   },
+   {
+    "predicted": "UPDATE",
+    "expected": "UPDATE",
+    "latency_ms": 9730.432443000609,
+    "category": "contradiction",
+    "incoming": "User relocated to Bangalore",
+    "existing": [
+     "User lives in Chennai"
+    ]
+   },
+   {
+    "predicted": "UPDATE",
+    "expected": "UPDATE",
+    "latency_ms": 9848.334700000123,
+    "category": "contradiction",
+    "incoming": "User's main editor is VS Code these days",
+    "existing": [
+     "User's main editor is Emacs"
+    ]
+   },
+   {
+    "predicted": "UPDATE",
+    "expected": "UPDATE",
+    "latency_ms": 9975.45181500027,
+    "category": "contradiction",
+    "incoming": "User has become a night owl",
+    "existing": [
+     "User is a morning person"
+    ]
+   },
+   {
+    "predicted": "UPDATE",
+    "expected": "UPDATE",
+    "latency_ms": 9316.332588001387,
+    "category": "contradiction",
+    "incoming": "User graduated and is now doing a master's",
+    "existing": [
+     "User is studying for a bachelor's degree"
+    ]
+   },
+   {
+    "predicted": "UPDATE",
+    "expected": "UPDATE",
+    "latency_ms": 8918.396464003308,
+    "category": "contradiction",
+    "incoming": "User replaced tea with coffee",
+    "existing": [
+     "User drinks tea daily"
+    ]
+   },
+   {
+    "predicted": "UPDATE",
+    "expected": "UPDATE",
+    "latency_ms": 8851.062371002627,
+    "category": "contradiction",
+    "incoming": "User cannot tolerate spicy food any more and prefers mild dishes",
+    "existing": [
+     "User likes spicy food",
+     "User lives in Delhi"
+    ]
+   },
+   {
+    "predicted": "UPDATE",
+    "expected": "UPDATE",
+    "latency_ms": 9845.102603001578,
+    "category": "contradiction",
+    "incoming": "User now uses a ThinkPad as their laptop",
+    "existing": [
+     "User's laptop is a MacBook"
+    ]
+   },
+   {
+    "predicted": "UPDATE",
+    "expected": "UPDATE",
+    "latency_ms": 10462.270285002887,
+    "category": "contradiction",
+    "incoming": "User accepted a job offer at a startup",
+    "existing": [
+     "User is unemployed and job hunting"
+    ]
+   },
+   {
+    "predicted": "UPDATE",
+    "expected": "UPDATE",
+    "latency_ms": 12183.15031099337,
+    "category": "contradiction",
+    "incoming": "User migrated their frontend work to Svelte",
+    "existing": [
+     "User uses React for frontend work"
+    ]
+   },
+   {
+    "predicted": "DELETE",
+    "expected": "DELETE",
+    "latency_ms": 11578.452907997416,
+    "category": "retraction",
+    "incoming": "User stopped learning the guitar",
+    "existing": [
+     "User is learning the guitar"
+    ]
+   },
+   {
+    "predicted": "DELETE",
+    "expected": "DELETE",
+    "latency_ms": 10957.227790000616,
+    "category": "retraction",
+    "incoming": "User is off the keto diet",
+    "existing": [
+     "User is on a keto diet"
+    ]
+   },
+   {
+    "predicted": "DELETE",
+    "expected": "DELETE",
+    "latency_ms": 10566.489636003098,
+    "category": "retraction",
+    "incoming": "User cancelled their gym membership",
+    "existing": [
+     "User has a gym membership"
+    ]
+   },
+   {
+    "predicted": "UPDATE",
+    "expected": "DELETE",
+    "latency_ms": 10957.842058000097,
+    "category": "retraction",
+    "incoming": "User abandoned the novel project",
+    "existing": [
+     "User is writing a novel",
+     "User likes tea"
+    ]
+   },
+   {
+    "predicted": "DELETE",
+    "expected": "DELETE",
+    "latency_ms": 11298.69856100413,
+    "category": "retraction",
+    "incoming": "User dropped out of the bootcamp",
+    "existing": [
+     "User is attending a coding bootcamp"
+    ]
+   },
+   {
+    "predicted": "DELETE",
+    "expected": "DELETE",
+    "latency_ms": 10898.469230000046,
+    "category": "retraction",
+    "incoming": "User unsubscribed from the AI newsletter",
+    "existing": [
+     "User subscribes to a newsletter on AI"
+    ]
+   },
+   {
+    "predicted": "DELETE",
+    "expected": "DELETE",
+    "latency_ms": 10175.141887004429,
+    "category": "retraction",
+    "incoming": "User does not play cricket any more",
+    "existing": [
+     "User plays cricket on weekends"
+    ]
+   },
+   {
+    "predicted": "DELETE",
+    "expected": "DELETE",
+    "latency_ms": 10626.059087997419,
+    "category": "retraction",
+    "incoming": "User called off the Japan trip",
+    "existing": [
+     "User is planning a trip to Japan"
+    ]
+   }
+  ]
+ }
+}

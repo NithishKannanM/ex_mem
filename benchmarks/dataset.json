@@ -1,0 +1,210 @@
+[
+  {
+    "category": "unrelated",
+    "existing": [
+      "User prefers Python for scripting"
+    ],
+    "incoming": "User enjoys hiking on weekends",
+    "ground_truth": "ADD"
+  },
+  {
+    "category": "unrelated",
+    "existing": [
+      "User works at a small startup"
+    ],
+    "incoming": "User is allergic to peanuts",
+    "ground_truth": "ADD"
+  },
+  {
+    "category": "unrelated",
+    "existing": [
+      "User uses vim as primary editor"
+    ],
+    "incoming": "User has a younger sister",
+    "ground_truth": "ADD"
+  },
+  {
+    "category": "unrelated",
+    "existing": [
+      "User has 5 years of Go experience"
+    ],
+    "incoming": "User plays chess competitively",
+    "ground_truth": "ADD"
+  },
+  {
+    "category": "unrelated",
+    "existing": [
+      "User lives in Berlin"
+    ],
+    "incoming": "User prefers dark roast coffee",
+    "ground_truth": "ADD"
+  },
+  {
+    "category": "unrelated",
+    "existing": [
+      "User is learning Rust"
+    ],
+    "incoming": "User's favourite film is Blade Runner",
+    "ground_truth": "ADD"
+  },
+  {
+    "category": "related_new",
+    "existing": [
+      "User uses Python for data work"
+    ],
+    "incoming": "User also uses Python for web backends with FastAPI",
+    "ground_truth": "ADD"
+  },
+  {
+    "category": "related_new",
+    "existing": [
+      "User likes dark mode in editors"
+    ],
+    "incoming": "User likes large monospace fonts in editors",
+    "ground_truth": "ADD"
+  },
+  {
+    "category": "related_new",
+    "existing": [
+      "User has a dog named Max"
+    ],
+    "incoming": "User has a cat named Luna",
+    "ground_truth": "ADD"
+  },
+  {
+    "category": "related_new",
+    "existing": [
+      "User is learning Rust"
+    ],
+    "incoming": "User is also learning Haskell",
+    "ground_truth": "ADD"
+  },
+  {
+    "category": "duplicate",
+    "existing": [
+      "User prefers dark mode"
+    ],
+    "incoming": "User prefers dark mode",
+    "ground_truth": "NOOP"
+  },
+  {
+    "category": "duplicate",
+    "existing": [
+      "User has 5 years of Python experience"
+    ],
+    "incoming": "User has five years of Python experience",
+    "ground_truth": "NOOP"
+  },
+  {
+    "category": "duplicate",
+    "existing": [
+      "User works as a data engineer"
+    ],
+    "incoming": "User is a data engineer",
+    "ground_truth": "NOOP"
+  },
+  {
+    "category": "duplicate",
+    "existing": [
+      "User dislikes boilerplate code"
+    ],
+    "incoming": "User dislikes writing boilerplate code",
+    "ground_truth": "NOOP"
+  },
+  {
+    "category": "duplicate",
+    "existing": [
+      "User lives in Berlin"
+    ],
+    "incoming": "User lives in Berlin, Germany",
+    "ground_truth": "NOOP"
+  },
+  {
+    "category": "contradiction",
+    "existing": [
+      "User prefers Python for all projects"
+    ],
+    "incoming": "User switched to Go and no longer uses Python",
+    "ground_truth": "UPDATE"
+  },
+  {
+    "category": "contradiction",
+    "existing": [
+      "User lives in Berlin"
+    ],
+    "incoming": "User moved to Lisbon",
+    "ground_truth": "UPDATE"
+  },
+  {
+    "category": "contradiction",
+    "existing": [
+      "User works at Acme Corp"
+    ],
+    "incoming": "User now works at Globex",
+    "ground_truth": "UPDATE"
+  },
+  {
+    "category": "contradiction",
+    "existing": [
+      "User is a Python beginner"
+    ],
+    "incoming": "User is now an expert Python developer",
+    "ground_truth": "UPDATE"
+  },
+  {
+    "category": "contradiction",
+    "existing": [
+      "User likes dark mode"
+    ],
+    "incoming": "User prefers light mode now",
+    "ground_truth": "UPDATE"
+  },
+  {
+    "category": "contradiction",
+    "existing": [
+      "User uses VSCode as primary editor"
+    ],
+    "incoming": "User switched to Neovim as primary editor",
+    "ground_truth": "UPDATE"
+  },
+  {
+    "category": "contradiction",
+    "existing": [
+      "User is vegetarian"
+    ],
+    "incoming": "User started eating meat again",
+    "ground_truth": "UPDATE"
+  },
+  {
+    "category": "retraction",
+    "existing": [
+      "User is learning Rust"
+    ],
+    "incoming": "User gave up on learning Rust entirely",
+    "ground_truth": "DELETE"
+  },
+  {
+    "category": "retraction",
+    "existing": [
+      "User has a dog named Max"
+    ],
+    "incoming": "User no longer has a dog",
+    "ground_truth": "DELETE"
+  },
+  {
+    "category": "retraction",
+    "existing": [
+      "User plays guitar"
+    ],
+    "incoming": "User does not play guitar anymore",
+    "ground_truth": "DELETE"
+  },
+  {
+    "category": "retraction",
+    "existing": [
+      "User is training for a marathon"
+    ],
+    "incoming": "User cancelled marathon training",
+    "ground_truth": "DELETE"
+  }
+]

@@ -1,0 +1,28 @@
+You are a memory conflict resolver for a personal assistant. A new fact about the user arrived. Compare it with the existing memories and choose exactly one action.
+
+Rules (apply in order):
+1. DELETE - the new fact says an existing memory is no longer true and gives NO replacement fact ("no longer", "gave up", "stopped", "cancelled", "does not ... anymore").
+2. UPDATE - the new fact replaces an existing memory about the SAME attribute with a different value (moved city, changed job, switched tool, changed level or preference).
+3. NOOP - the new fact says the same thing as an existing memory (paraphrase, different wording, extra harmless detail).
+4. ADD - the new fact is about a different attribute or adds something alongside the existing memories ("also", a second item, a different subject). Both facts can be true at once.
+
+Key test: could the existing memory and the new fact BOTH be true at the same time? If yes -> ADD or NOOP. If the new fact makes the old one false -> UPDATE or DELETE.
+
+Examples:
+Existing: ["User lives in Berlin"] New: "User moved to Lisbon" -> UPDATE
+Existing: ["User has a dog named Max"] New: "User has a cat named Luna" -> ADD
+Existing: ["User is learning Rust"] New: "User is also learning Haskell" -> ADD
+Existing: ["User plays guitar"] New: "User does not play guitar anymore" -> DELETE
+Existing: ["User works as a data engineer"] New: "User is a data engineer" -> NOOP
+Existing: ["User likes dark mode"] New: "User enjoys hiking" -> ADD
+
+New memory: {new_memory}
+
+Similar existing memories:
+{existing_memories}
+
+Return JSON:
+{{
+  "decision": "ADD" | "UPDATE" | "DELETE" | "NOOP",
+  "reason": "one line explanation"
+}}

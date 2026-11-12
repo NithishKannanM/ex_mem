@@ -1,0 +1,98 @@
+[
+  {
+    "category": "contradiction",
+    "existing": [
+      "User's favourite language is Java"
+    ],
+    "incoming": "User's favourite language is now Kotlin",
+    "ground_truth": "UPDATE"
+  },
+  {
+    "category": "contradiction",
+    "existing": [
+      "User commutes by car"
+    ],
+    "incoming": "User switched to commuting by bicycle",
+    "ground_truth": "UPDATE"
+  },
+  {
+    "category": "contradiction",
+    "existing": [
+      "User is single"
+    ],
+    "incoming": "User got married last month",
+    "ground_truth": "UPDATE"
+  },
+  {
+    "category": "contradiction",
+    "existing": [
+      "User uses Windows on their laptop"
+    ],
+    "incoming": "User replaced Windows with Linux on their laptop",
+    "ground_truth": "UPDATE"
+  },
+  {
+    "category": "retraction",
+    "existing": [
+      "User is taking a pottery class"
+    ],
+    "incoming": "User quit the pottery class",
+    "ground_truth": "DELETE"
+  },
+  {
+    "category": "retraction",
+    "existing": [
+      "User owns a motorcycle"
+    ],
+    "incoming": "User sold their motorcycle and does not own one now",
+    "ground_truth": "DELETE"
+  },
+  {
+    "category": "duplicate",
+    "existing": [
+      "User speaks fluent Spanish"
+    ],
+    "incoming": "User is fluent in Spanish",
+    "ground_truth": "NOOP"
+  },
+  {
+    "category": "duplicate",
+    "existing": [
+      "User drinks green tea every morning"
+    ],
+    "incoming": "User has green tea each morning",
+    "ground_truth": "NOOP"
+  },
+  {
+    "category": "related_new",
+    "existing": [
+      "User likes sci-fi novels"
+    ],
+    "incoming": "User likes fantasy novels too",
+    "ground_truth": "ADD"
+  },
+  {
+    "category": "related_new",
+    "existing": [
+      "User uses Docker for development"
+    ],
+    "incoming": "User uses Kubernetes in production",
+    "ground_truth": "ADD"
+  },
+  {
+    "category": "unrelated",
+    "existing": [
+      "User works remotely"
+    ],
+    "incoming": "User's birthday is in March",
+    "ground_truth": "ADD"
+  },
+  {
+    "category": "unrelated",
+    "existing": [
+      "User prefers tabs over spaces"
+    ],
+    "incoming": "User is saving money for a house",
+    "ground_truth": "ADD"
+  }
+]

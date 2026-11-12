@@ -1,0 +1,320 @@
+[
+  {
+    "category": "duplicate",
+    "existing": [
+      "User is a backend engineer at a fintech company"
+    ],
+    "incoming": "User works on backend systems at a fintech firm",
+    "ground_truth": "NOOP"
+  },
+  {
+    "category": "duplicate",
+    "existing": [
+      "User has been programming for ten years"
+    ],
+    "incoming": "User has a decade of programming experience",
+    "ground_truth": "NOOP"
+  },
+  {
+    "category": "duplicate",
+    "existing": [
+      "User is allergic to shellfish"
+    ],
+    "incoming": "User cannot eat shellfish because of an allergy",
+    "ground_truth": "NOOP"
+  },
+  {
+    "category": "duplicate",
+    "existing": [
+      "User prefers keyboard shortcuts over the mouse"
+    ],
+    "incoming": "User likes using keyboard shortcuts rather than a mouse",
+    "ground_truth": "NOOP"
+  },
+  {
+    "category": "duplicate",
+    "existing": [
+      "User lives in Toronto",
+      "User likes hockey"
+    ],
+    "incoming": "User resides in Toronto",
+    "ground_truth": "NOOP"
+  },
+  {
+    "category": "duplicate",
+    "existing": [
+      "User is learning to play the violin"
+    ],
+    "incoming": "User is taking up the violin",
+    "ground_truth": "NOOP"
+  },
+  {
+    "category": "duplicate",
+    "existing": [
+      "User wakes up at 6am every day"
+    ],
+    "incoming": "User gets up at six in the morning daily",
+    "ground_truth": "NOOP"
+  },
+  {
+    "category": "duplicate",
+    "existing": [
+      "User's team uses Postgres as its main database"
+    ],
+    "incoming": "User's team has Postgres as the primary database",
+    "ground_truth": "NOOP"
+  },
+  {
+    "category": "related_new",
+    "existing": [
+      "User uses Postgres at work"
+    ],
+    "incoming": "User uses SQLite for side projects",
+    "ground_truth": "ADD"
+  },
+  {
+    "category": "related_new",
+    "existing": [
+      "User runs 5km every morning"
+    ],
+    "incoming": "User swims on weekends",
+    "ground_truth": "ADD"
+  },
+  {
+    "category": "related_new",
+    "existing": [
+      "User is learning Spanish"
+    ],
+    "incoming": "User is learning Japanese as well",
+    "ground_truth": "ADD"
+  },
+  {
+    "category": "related_new",
+    "existing": [
+      "User has a sister named Priya"
+    ],
+    "incoming": "User has a brother named Arjun",
+    "ground_truth": "ADD"
+  },
+  {
+    "category": "related_new",
+    "existing": [
+      "User likes Italian food"
+    ],
+    "incoming": "User likes Thai food",
+    "ground_truth": "ADD"
+  },
+  {
+    "category": "related_new",
+    "existing": [
+      "User uses Python at work",
+      "User uses Go for side projects"
+    ],
+    "incoming": "User uses TypeScript for frontend work",
+    "ground_truth": "ADD"
+  },
+  {
+    "category": "related_new",
+    "existing": [
+      "User is reading a book on distributed systems"
+    ],
+    "incoming": "User is reading a novel before bed",
+    "ground_truth": "ADD"
+  },
+  {
+    "category": "related_new",
+    "existing": [
+      "User owns a laptop running Linux"
+    ],
+    "incoming": "User owns a desktop running Windows",
+    "ground_truth": "ADD"
+  },
+  {
+    "category": "unrelated",
+    "existing": [
+      "User lives in Pune",
+      "User works in finance"
+    ],
+    "incoming": "User is afraid of heights",
+    "ground_truth": "ADD"
+  },
+  {
+    "category": "unrelated",
+    "existing": [
+      "User prefers concise answers"
+    ],
+    "incoming": "User's favourite colour is green",
+    "ground_truth": "ADD"
+  },
+  {
+    "category": "unrelated",
+    "existing": [
+      "User is a vegetarian"
+    ],
+    "incoming": "User plays the tabla",
+    "ground_truth": "ADD"
+  },
+  {
+    "category": "unrelated",
+    "existing": [
+      "User is preparing for the GRE"
+    ],
+    "incoming": "User has a motorbike",
+    "ground_truth": "ADD"
+  },
+  {
+    "category": "unrelated",
+    "existing": [
+      "User likes jazz",
+      "User drinks black coffee"
+    ],
+    "incoming": "User is building a RAG project",
+    "ground_truth": "ADD"
+  },
+  {
+    "category": "contradiction",
+    "existing": [
+      "User works at Google"
+    ],
+    "incoming": "User joined Microsoft last week",
+    "ground_truth": "UPDATE"
+  },
+  {
+    "category": "contradiction",
+    "existing": [
+      "User lives in Chennai"
+    ],
+    "incoming": "User relocated to Bangalore",
+    "ground_truth": "UPDATE"
+  },
+  {
+    "category": "contradiction",
+    "existing": [
+      "User's main editor is Emacs"
+    ],
+    "incoming": "User's main editor is VS Code these days",
+    "ground_truth": "UPDATE"
+  },
+  {
+    "category": "contradiction",
+    "existing": [
+      "User is a morning person"
+    ],
+    "incoming": "User has become a night owl",
+    "ground_truth": "UPDATE"
+  },
+  {
+    "category": "contradiction",
+    "existing": [
+      "User is studying for a bachelor's degree"
+    ],
+    "incoming": "User graduated and is now doing a master's",
+    "ground_truth": "UPDATE"
+  },
+  {
+    "category": "contradiction",
+    "existing": [
+      "User drinks tea daily"
+    ],
+    "incoming": "User replaced tea with coffee",
+    "ground_truth": "UPDATE"
+  },
+  {
+    "category": "contradiction",
+    "existing": [
+      "User likes spicy food",
+      "User lives in Delhi"
+    ],
+    "incoming": "User cannot tolerate spicy food any more and prefers mild dishes",
+    "ground_truth": "UPDATE"
+  },
+  {
+    "category": "contradiction",
+    "existing": [
+      "User's laptop is a MacBook"
+    ],
+    "incoming": "User now uses a ThinkPad as their laptop",
+    "ground_truth": "UPDATE"
+  },
+  {
+    "category": "contradiction",
+    "existing": [
+      "User is unemployed and job hunting"
+    ],
+    "incoming": "User accepted a job offer at a startup",
+    "ground_truth": "UPDATE"
+  },
+  {
+    "category": "contradiction",
+    "existing": [
+      "User uses React for frontend work"
+    ],
+    "incoming": "User migrated their frontend work to Svelte",
+    "ground_truth": "UPDATE"
+  },
+  {
+    "category": "retraction",
+    "existing": [
+      "User is learning the guitar"
+    ],
+    "incoming": "User stopped learning the guitar",
+    "ground_truth": "DELETE"
+  },
+  {
+    "category": "retraction",
+    "existing": [
+      "User is on a keto diet"
+    ],
+    "incoming": "User is off the keto diet",
+    "ground_truth": "DELETE"
+  },
+  {
+    "category": "retraction",
+    "existing": [
+      "User has a gym membership"
+    ],
+    "incoming": "User cancelled their gym membership",
+    "ground_truth": "DELETE"
+  },
+  {
+    "category": "retraction",
+    "existing": [
+      "User is writing a novel",
+      "User likes tea"
+    ],
+    "incoming": "User abandoned the novel project",
+    "ground_truth": "DELETE"
+  },
+  {
+    "category": "retraction",
+    "existing": [
+      "User is attending a coding bootcamp"
+    ],
+    "incoming": "User dropped out of the bootcamp",
+    "ground_truth": "DELETE"
+  },
+  {
+    "category": "retraction",
+    "existing": [
+      "User subscribes to a newsletter on AI"
+    ],
+    "incoming": "User unsubscribed from the AI newsletter",
+    "ground_truth": "DELETE"
+  },
+  {
+    "category": "retraction",
+    "existing": [
+      "User plays cricket on weekends"
+    ],
+    "incoming": "User does not play cricket any more",
+    "ground_truth": "DELETE"
+  },
+  {
+    "category": "retraction",
+    "existing": [
+      "User is planning a trip to Japan"
+    ],
+    "incoming": "User called off the Japan trip",
+    "ground_truth": "DELETE"
+  }
+]

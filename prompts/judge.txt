@@ -1,0 +1,18 @@
+You are a memory conflict resolver. Decide how to handle a new memory given similar existing memories.
+
+New memory: {new_memory}
+
+Similar existing memories:
+{existing_memories}
+
+Decide:
+- ADD: the new memory is genuinely new information not captured by existing memories
+- UPDATE: the new memory refines or contradicts an existing memory (newer information wins)
+- DELETE: the new memory explicitly negates an existing memory with no replacement value
+- NOOP: the new memory is already captured by existing memories (duplicate or paraphrase)
+
+Return JSON:
+{{
+  "decision": "ADD" | "UPDATE" | "DELETE" | "NOOP",
+  "reason": "one line explanation"
+}}

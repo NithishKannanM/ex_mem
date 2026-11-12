@@ -1,0 +1,2090 @@
+[
+  {
+    "judge_model": "llama3.2:3b",
+    "prompt": "judge.txt",
+    "results": {
+      "A_rule_only": {
+        "accuracy": 0.692,
+        "false_conflict_rate": 0.154,
+        "miss_rate": 0.0,
+        "p50_latency_ms": 13.78,
+        "p95_latency_ms": 17.55,
+        "per_category_accuracy": {
+          "unrelated": 1.0,
+          "related_new": 0.0,
+          "duplicate": 1.0,
+          "contradiction": 1.0,
+          "retraction": 0.0
+        },
+        "predictions": [
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 19.86572800160502,
+            "category": "unrelated"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 16.283216998999706,
+            "category": "unrelated"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 14.38263100135373,
+            "category": "unrelated"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 14.351144000102067,
+            "category": "unrelated"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 13.609151999844471,
+            "category": "unrelated"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 14.382199999090517,
+            "category": "unrelated"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "ADD",
+            "latency_ms": 17.55394399879151,
+            "category": "related_new"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "ADD",
+            "latency_ms": 14.7920180024812,
+            "category": "related_new"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "ADD",
+            "latency_ms": 13.58533800157602,
+            "category": "related_new"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "ADD",
+            "latency_ms": 13.777461001154734,
+            "category": "related_new"
+          },
+          {
+            "predicted": "NOOP",
+            "expected": "NOOP",
+            "latency_ms": 12.342579000687692,
+            "category": "duplicate"
+          },
+          {
+            "predicted": "NOOP",
+            "expected": "NOOP",
+            "latency_ms": 13.482365000527352,
+            "category": "duplicate"
+          },
+          {
+            "predicted": "NOOP",
+            "expected": "NOOP",
+            "latency_ms": 12.09407399801421,
+            "category": "duplicate"
+          },
+          {
+            "predicted": "NOOP",
+            "expected": "NOOP",
+            "latency_ms": 13.879119000193896,
+            "category": "duplicate"
+          },
+          {
+            "predicted": "NOOP",
+            "expected": "NOOP",
+            "latency_ms": 13.332819999050116,
+            "category": "duplicate"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "UPDATE",
+            "latency_ms": 15.532401001109974,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "UPDATE",
+            "latency_ms": 14.184286999807227,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "UPDATE",
+            "latency_ms": 13.693493001483148,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "UPDATE",
+            "latency_ms": 13.23866999882739,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "UPDATE",
+            "latency_ms": 12.852968997322023,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "UPDATE",
+            "latency_ms": 15.401757002109662,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "UPDATE",
+            "latency_ms": 13.09897600003751,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "DELETE",
+            "latency_ms": 12.201741999888327,
+            "category": "retraction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "DELETE",
+            "latency_ms": 12.293077998037916,
+            "category": "retraction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "DELETE",
+            "latency_ms": 14.360838998982217,
+            "category": "retraction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "DELETE",
+            "latency_ms": 12.878754998382647,
+            "category": "retraction"
+          }
+        ]
+      },
+      "B_llm_always": {
+        "accuracy": 0.462,
+        "false_conflict_rate": 0.308,
+        "miss_rate": 0.154,
+        "p50_latency_ms": 1141.01,
+        "p95_latency_ms": 1737.07,
+        "per_category_accuracy": {
+          "unrelated": 0.5,
+          "related_new": 0.75,
+          "duplicate": 0.2,
+          "contradiction": 0.714,
+          "retraction": 0.0
+        },
+        "predictions": [
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 1504.2733699992823,
+            "category": "unrelated"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 1135.0218000006862,
+            "category": "unrelated"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "ADD",
+            "latency_ms": 2031.633842001611,
+            "category": "unrelated"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "ADD",
+            "latency_ms": 1126.9303300032334,
+            "category": "unrelated"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "ADD",
+            "latency_ms": 1058.2990700022492,
+            "category": "unrelated"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 1162.6795589982066,
+            "category": "unrelated"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 863.0991130012262,
+            "category": "related_new"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "ADD",
+            "latency_ms": 1437.3446459976549,
+            "category": "related_new"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 1079.5185220013082,
+            "category": "related_new"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 123.42874200112419,
+            "category": "related_new"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "NOOP",
+            "latency_ms": 1165.2613379992545,
+            "category": "duplicate"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "NOOP",
+            "latency_ms": 913.1423079998058,
+            "category": "duplicate"
+          },
+          {
+            "predicted": "NOOP",
+            "expected": "NOOP",
+            "latency_ms": 1122.752090999711,
+            "category": "duplicate"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "NOOP",
+            "latency_ms": 1200.9120189977693,
+            "category": "duplicate"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "NOOP",
+            "latency_ms": 1366.1757779991603,
+            "category": "duplicate"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "UPDATE",
+            "latency_ms": 1127.3195109970402,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "UPDATE",
+            "latency_ms": 1166.9951629992283,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "UPDATE",
+            "latency_ms": 141.2496650009416,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "UPDATE",
+            "latency_ms": 1036.376485000801,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "UPDATE",
+            "latency_ms": 1451.4666719987872,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "UPDATE",
+            "latency_ms": 1062.511864998669,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "UPDATE",
+            "latency_ms": 1141.0089619967039,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "NOOP",
+            "expected": "DELETE",
+            "latency_ms": 1172.8211869994993,
+            "category": "retraction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "DELETE",
+            "latency_ms": 1705.712835999293,
+            "category": "retraction"
+          },
+          {
+            "predicted": "NOOP",
+            "expected": "DELETE",
+            "latency_ms": 1737.071322000702,
+            "category": "retraction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "DELETE",
+            "latency_ms": 1095.8932890025608,
+            "category": "retraction"
+          }
+        ]
+      },
+      "C_tiered": {
+        "accuracy": 0.769,
+        "false_conflict_rate": 0.115,
+        "miss_rate": 0.038,
+        "p50_latency_ms": 972.06,
+        "p95_latency_ms": 1656.79,
+        "per_category_accuracy": {
+          "unrelated": 1.0,
+          "related_new": 0.25,
+          "duplicate": 1.0,
+          "contradiction": 1.0,
+          "retraction": 0.25
+        },
+        "predictions": [
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 18.777223998768022,
+            "category": "unrelated"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 15.54284799931338,
+            "category": "unrelated"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 15.535251000983408,
+            "category": "unrelated"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 15.146627996728057,
+            "category": "unrelated"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 13.80298999720253,
+            "category": "unrelated"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 16.149234001204604,
+            "category": "unrelated"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "ADD",
+            "latency_ms": 1333.295692998945,
+            "category": "related_new"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "ADD",
+            "latency_ms": 1951.8724820009083,
+            "category": "related_new"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 930.477902002167,
+            "category": "related_new"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "ADD",
+            "latency_ms": 1129.1328170009365,
+            "category": "related_new"
+          },
+          {
+            "predicted": "NOOP",
+            "expected": "NOOP",
+            "latency_ms": 16.296685000270372,
+            "category": "duplicate"
+          },
+          {
+            "predicted": "NOOP",
+            "expected": "NOOP",
+            "latency_ms": 20.852702000411227,
+            "category": "duplicate"
+          },
+          {
+            "predicted": "NOOP",
+            "expected": "NOOP",
+            "latency_ms": 18.597631002194248,
+            "category": "duplicate"
+          },
+          {
+            "predicted": "NOOP",
+            "expected": "NOOP",
+            "latency_ms": 20.665761003328953,
+            "category": "duplicate"
+          },
+          {
+            "predicted": "NOOP",
+            "expected": "NOOP",
+            "latency_ms": 19.140549997246126,
+            "category": "duplicate"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "UPDATE",
+            "latency_ms": 1023.1165280019923,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "UPDATE",
+            "latency_ms": 1043.0472359985288,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "UPDATE",
+            "latency_ms": 1513.9188950015523,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "UPDATE",
+            "latency_ms": 972.0560739988287,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "UPDATE",
+            "latency_ms": 1656.7903430004662,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "UPDATE",
+            "latency_ms": 1517.464321001171,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "UPDATE",
+            "latency_ms": 1494.4462429994019,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "NOOP",
+            "expected": "DELETE",
+            "latency_ms": 1609.731960001227,
+            "category": "retraction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "DELETE",
+            "latency_ms": 870.9416579986282,
+            "category": "retraction"
+          },
+          {
+            "predicted": "DELETE",
+            "expected": "DELETE",
+            "latency_ms": 1195.6241890002275,
+            "category": "retraction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "DELETE",
+            "latency_ms": 1281.5458199984278,
+            "category": "retraction"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "judge_model": "llama3.2:3b",
+    "prompt": "judge_v2.txt",
+    "results": {
+      "A_rule_only": {
+        "accuracy": 0.692,
+        "false_conflict_rate": 0.154,
+        "miss_rate": 0.0,
+        "p50_latency_ms": 13.85,
+        "p95_latency_ms": 15.89,
+        "per_category_accuracy": {
+          "unrelated": 1.0,
+          "related_new": 0.0,
+          "duplicate": 1.0,
+          "contradiction": 1.0,
+          "retraction": 0.0
+        },
+        "predictions": [
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 16.541721000976395,
+            "category": "unrelated"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 12.574929001857527,
+            "category": "unrelated"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 14.23510300082853,
+            "category": "unrelated"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 12.822176999179646,
+            "category": "unrelated"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 12.420332001056522,
+            "category": "unrelated"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 14.267840000684373,
+            "category": "unrelated"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "ADD",
+            "latency_ms": 15.887828001723392,
+            "category": "related_new"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "ADD",
+            "latency_ms": 14.538381998136174,
+            "category": "related_new"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "ADD",
+            "latency_ms": 14.207948002876947,
+            "category": "related_new"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "ADD",
+            "latency_ms": 12.43108500057133,
+            "category": "related_new"
+          },
+          {
+            "predicted": "NOOP",
+            "expected": "NOOP",
+            "latency_ms": 13.231344000814715,
+            "category": "duplicate"
+          },
+          {
+            "predicted": "NOOP",
+            "expected": "NOOP",
+            "latency_ms": 14.06440500068129,
+            "category": "duplicate"
+          },
+          {
+            "predicted": "NOOP",
+            "expected": "NOOP",
+            "latency_ms": 13.319755002157763,
+            "category": "duplicate"
+          },
+          {
+            "predicted": "NOOP",
+            "expected": "NOOP",
+            "latency_ms": 14.182432998495642,
+            "category": "duplicate"
+          },
+          {
+            "predicted": "NOOP",
+            "expected": "NOOP",
+            "latency_ms": 14.599112000723835,
+            "category": "duplicate"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "UPDATE",
+            "latency_ms": 13.848323997081025,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "UPDATE",
+            "latency_ms": 12.135662997025065,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "UPDATE",
+            "latency_ms": 14.468244000454433,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "UPDATE",
+            "latency_ms": 13.535122998291627,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "UPDATE",
+            "latency_ms": 12.981332001800183,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "UPDATE",
+            "latency_ms": 14.417166999919573,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "UPDATE",
+            "latency_ms": 13.99683799900231,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "DELETE",
+            "latency_ms": 13.309940000908682,
+            "category": "retraction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "DELETE",
+            "latency_ms": 13.77064600092126,
+            "category": "retraction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "DELETE",
+            "latency_ms": 13.579292000940768,
+            "category": "retraction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "DELETE",
+            "latency_ms": 12.015115000394871,
+            "category": "retraction"
+          }
+        ]
+      },
+      "B_llm_always": {
+        "accuracy": 0.346,
+        "false_conflict_rate": 0.0,
+        "miss_rate": 0.385,
+        "p50_latency_ms": 1811.61,
+        "p95_latency_ms": 2444.31,
+        "per_category_accuracy": {
+          "unrelated": 0.833,
+          "related_new": 1.0,
+          "duplicate": 0.0,
+          "contradiction": 0.0,
+          "retraction": 0.0
+        },
+        "predictions": [
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 4157.805503000418,
+            "category": "unrelated"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 1809.7212169996055,
+            "category": "unrelated"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 1612.8666299991892,
+            "category": "unrelated"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 1790.9750110011373,
+            "category": "unrelated"
+          },
+          {
+            "predicted": "NOOP",
+            "expected": "ADD",
+            "latency_ms": 1584.2569670021476,
+            "category": "unrelated"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 2076.051575000747,
+            "category": "unrelated"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 1634.180852001009,
+            "category": "related_new"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 2038.6035820010875,
+            "category": "related_new"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 2021.350691000407,
+            "category": "related_new"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 1830.876267998974,
+            "category": "related_new"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "NOOP",
+            "latency_ms": 1671.1669389987946,
+            "category": "duplicate"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "NOOP",
+            "latency_ms": 1811.6120560007403,
+            "category": "duplicate"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "NOOP",
+            "latency_ms": 1606.115549999231,
+            "category": "duplicate"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "NOOP",
+            "latency_ms": 1868.6045560025377,
+            "category": "duplicate"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "NOOP",
+            "latency_ms": 1674.919877998036,
+            "category": "duplicate"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "UPDATE",
+            "latency_ms": 1756.9620690010197,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "UPDATE",
+            "latency_ms": 1648.0372340010945,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "UPDATE",
+            "latency_ms": 1904.2798109985597,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "UPDATE",
+            "latency_ms": 2031.8459090012766,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "NOOP",
+            "expected": "UPDATE",
+            "latency_ms": 2163.96055000223,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "UPDATE",
+            "latency_ms": 1821.9162860004872,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "UPDATE",
+            "latency_ms": 1526.1750129975553,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "DELETE",
+            "latency_ms": 1809.069629998703,
+            "category": "retraction"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "DELETE",
+            "latency_ms": 2444.3106780017843,
+            "category": "retraction"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "DELETE",
+            "latency_ms": 1521.7415439983597,
+            "category": "retraction"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "DELETE",
+            "latency_ms": 1874.7990380034025,
+            "category": "retraction"
+          }
+        ]
+      },
+      "C_tiered": {
+        "accuracy": 0.731,
+        "false_conflict_rate": 0.0,
+        "miss_rate": 0.231,
+        "p50_latency_ms": 1523.72,
+        "p95_latency_ms": 2203.88,
+        "per_category_accuracy": {
+          "unrelated": 1.0,
+          "related_new": 1.0,
+          "duplicate": 1.0,
+          "contradiction": 0.143,
+          "retraction": 0.75
+        },
+        "predictions": [
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 17.388770000252407,
+            "category": "unrelated"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 17.14242399975774,
+            "category": "unrelated"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 17.251600002055056,
+            "category": "unrelated"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 16.936904001340736,
+            "category": "unrelated"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 17.038705002050847,
+            "category": "unrelated"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 20.23054500023136,
+            "category": "unrelated"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 2215.457663001871,
+            "category": "related_new"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 1639.8420320001605,
+            "category": "related_new"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 1679.7289390015067,
+            "category": "related_new"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 1372.420964002231,
+            "category": "related_new"
+          },
+          {
+            "predicted": "NOOP",
+            "expected": "NOOP",
+            "latency_ms": 19.117525000183377,
+            "category": "duplicate"
+          },
+          {
+            "predicted": "NOOP",
+            "expected": "NOOP",
+            "latency_ms": 22.43717400051537,
+            "category": "duplicate"
+          },
+          {
+            "predicted": "NOOP",
+            "expected": "NOOP",
+            "latency_ms": 20.543168000585865,
+            "category": "duplicate"
+          },
+          {
+            "predicted": "NOOP",
+            "expected": "NOOP",
+            "latency_ms": 22.760216997994576,
+            "category": "duplicate"
+          },
+          {
+            "predicted": "NOOP",
+            "expected": "NOOP",
+            "latency_ms": 21.023050998337567,
+            "category": "duplicate"
+          },
+          {
+            "predicted": "DELETE",
+            "expected": "UPDATE",
+            "latency_ms": 1523.7171080007101,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "UPDATE",
+            "latency_ms": 1502.5853289989755,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "UPDATE",
+            "latency_ms": 1565.463904000353,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "UPDATE",
+            "latency_ms": 1546.3042029987264,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "UPDATE",
+            "latency_ms": 1905.6285160004336,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "UPDATE",
+            "latency_ms": 1878.3670129996608,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "UPDATE",
+            "latency_ms": 1789.4652000031783,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "DELETE",
+            "expected": "DELETE",
+            "latency_ms": 1724.9140669991903,
+            "category": "retraction"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "DELETE",
+            "latency_ms": 1914.4000420019438,
+            "category": "retraction"
+          },
+          {
+            "predicted": "DELETE",
+            "expected": "DELETE",
+            "latency_ms": 2203.8813150029455,
+            "category": "retraction"
+          },
+          {
+            "predicted": "DELETE",
+            "expected": "DELETE",
+            "latency_ms": 1809.6398169982422,
+            "category": "retraction"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "judge_model": "qwen2.5:7b-instruct-q4_K_M",
+    "prompt": "judge.txt",
+    "results": {
+      "A_rule_only": {
+        "accuracy": 0.692,
+        "false_conflict_rate": 0.154,
+        "miss_rate": 0.0,
+        "p50_latency_ms": 14.36,
+        "p95_latency_ms": 15.65,
+        "per_category_accuracy": {
+          "unrelated": 1.0,
+          "related_new": 0.0,
+          "duplicate": 1.0,
+          "contradiction": 1.0,
+          "retraction": 0.0
+        },
+        "predictions": [
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 13.6928590000025,
+            "category": "unrelated"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 12.563524000142934,
+            "category": "unrelated"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 13.202622001699638,
+            "category": "unrelated"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 13.743914998485707,
+            "category": "unrelated"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 13.542246997531038,
+            "category": "unrelated"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 15.292075997422216,
+            "category": "unrelated"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "ADD",
+            "latency_ms": 17.99025899890694,
+            "category": "related_new"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "ADD",
+            "latency_ms": 14.818367999396287,
+            "category": "related_new"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "ADD",
+            "latency_ms": 15.654020000511082,
+            "category": "related_new"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "ADD",
+            "latency_ms": 14.415542002097936,
+            "category": "related_new"
+          },
+          {
+            "predicted": "NOOP",
+            "expected": "NOOP",
+            "latency_ms": 13.17061199733871,
+            "category": "duplicate"
+          },
+          {
+            "predicted": "NOOP",
+            "expected": "NOOP",
+            "latency_ms": 15.509173997998005,
+            "category": "duplicate"
+          },
+          {
+            "predicted": "NOOP",
+            "expected": "NOOP",
+            "latency_ms": 14.703270000609336,
+            "category": "duplicate"
+          },
+          {
+            "predicted": "NOOP",
+            "expected": "NOOP",
+            "latency_ms": 14.893644998664968,
+            "category": "duplicate"
+          },
+          {
+            "predicted": "NOOP",
+            "expected": "NOOP",
+            "latency_ms": 13.620484998682514,
+            "category": "duplicate"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "UPDATE",
+            "latency_ms": 14.95352100027958,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "UPDATE",
+            "latency_ms": 12.672880002355669,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "UPDATE",
+            "latency_ms": 13.703212000109488,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "UPDATE",
+            "latency_ms": 14.436583998758579,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "UPDATE",
+            "latency_ms": 14.098961997660808,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "UPDATE",
+            "latency_ms": 15.257611998094944,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "UPDATE",
+            "latency_ms": 13.850788000127068,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "DELETE",
+            "latency_ms": 14.440681999985827,
+            "category": "retraction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "DELETE",
+            "latency_ms": 13.411673000518931,
+            "category": "retraction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "DELETE",
+            "latency_ms": 14.36464799917303,
+            "category": "retraction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "DELETE",
+            "latency_ms": 13.541248001274653,
+            "category": "retraction"
+          }
+        ]
+      },
+      "B_llm_always": {
+        "accuracy": 0.577,
+        "false_conflict_rate": 0.0,
+        "miss_rate": 0.038,
+        "p50_latency_ms": 5835.86,
+        "p95_latency_ms": 6945.09,
+        "per_category_accuracy": {
+          "unrelated": 0.333,
+          "related_new": 1.0,
+          "duplicate": 0.6,
+          "contradiction": 0.857,
+          "retraction": 0.0
+        },
+        "predictions": [
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 19516.07959499961,
+            "category": "unrelated"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 6606.337371998961,
+            "category": "unrelated"
+          },
+          {
+            "predicted": "NOOP",
+            "expected": "ADD",
+            "latency_ms": 6418.518862003111,
+            "category": "unrelated"
+          },
+          {
+            "predicted": "NOOP",
+            "expected": "ADD",
+            "latency_ms": 6945.090460998472,
+            "category": "unrelated"
+          },
+          {
+            "predicted": "NOOP",
+            "expected": "ADD",
+            "latency_ms": 6202.9336279993,
+            "category": "unrelated"
+          },
+          {
+            "predicted": "NOOP",
+            "expected": "ADD",
+            "latency_ms": 6504.782997999428,
+            "category": "unrelated"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 6683.087509998586,
+            "category": "related_new"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 6311.056587001076,
+            "category": "related_new"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 5577.402593000443,
+            "category": "related_new"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 5768.047443998512,
+            "category": "related_new"
+          },
+          {
+            "predicted": "NOOP",
+            "expected": "NOOP",
+            "latency_ms": 5072.829442000511,
+            "category": "duplicate"
+          },
+          {
+            "predicted": "NOOP",
+            "expected": "NOOP",
+            "latency_ms": 5101.778047002881,
+            "category": "duplicate"
+          },
+          {
+            "predicted": "NOOP",
+            "expected": "NOOP",
+            "latency_ms": 5073.378852001042,
+            "category": "duplicate"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "NOOP",
+            "latency_ms": 6359.052445000998,
+            "category": "duplicate"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "NOOP",
+            "latency_ms": 5698.415585000475,
+            "category": "duplicate"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "UPDATE",
+            "latency_ms": 5399.734358001297,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "UPDATE",
+            "latency_ms": 5227.546752001217,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "UPDATE",
+            "latency_ms": 5759.841545997915,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "UPDATE",
+            "latency_ms": 5540.803375002724,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "UPDATE",
+            "latency_ms": 6090.826405998087,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "UPDATE",
+            "latency_ms": 6519.150202002493,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "UPDATE",
+            "latency_ms": 5604.193421000673,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "DELETE",
+            "latency_ms": 5835.864608998236,
+            "category": "retraction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "DELETE",
+            "latency_ms": 5537.577014001727,
+            "category": "retraction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "DELETE",
+            "latency_ms": 5493.200846001855,
+            "category": "retraction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "DELETE",
+            "latency_ms": 6082.8039909974905,
+            "category": "retraction"
+          }
+        ]
+      },
+      "C_tiered": {
+        "accuracy": 0.808,
+        "false_conflict_rate": 0.0,
+        "miss_rate": 0.038,
+        "p50_latency_ms": 2728.9,
+        "p95_latency_ms": 3812.02,
+        "per_category_accuracy": {
+          "unrelated": 1.0,
+          "related_new": 1.0,
+          "duplicate": 1.0,
+          "contradiction": 0.857,
+          "retraction": 0.0
+        },
+        "predictions": [
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 23.169669999333564,
+            "category": "unrelated"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 23.49808600047254,
+            "category": "unrelated"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 20.388115000969265,
+            "category": "unrelated"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 18.760991999442922,
+            "category": "unrelated"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 16.812449001008645,
+            "category": "unrelated"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 20.628900001611328,
+            "category": "unrelated"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 2819.1550000010466,
+            "category": "related_new"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 2936.206996000692,
+            "category": "related_new"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 3593.0502749979496,
+            "category": "related_new"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 3204.16296500116,
+            "category": "related_new"
+          },
+          {
+            "predicted": "NOOP",
+            "expected": "NOOP",
+            "latency_ms": 22.753208999347407,
+            "category": "duplicate"
+          },
+          {
+            "predicted": "NOOP",
+            "expected": "NOOP",
+            "latency_ms": 28.524548000859795,
+            "category": "duplicate"
+          },
+          {
+            "predicted": "NOOP",
+            "expected": "NOOP",
+            "latency_ms": 20.43263399900752,
+            "category": "duplicate"
+          },
+          {
+            "predicted": "NOOP",
+            "expected": "NOOP",
+            "latency_ms": 22.92321200002334,
+            "category": "duplicate"
+          },
+          {
+            "predicted": "NOOP",
+            "expected": "NOOP",
+            "latency_ms": 21.358038000471424,
+            "category": "duplicate"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "UPDATE",
+            "latency_ms": 2617.5092599987693,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "UPDATE",
+            "latency_ms": 2781.871704002697,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "UPDATE",
+            "latency_ms": 2929.510891000973,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "UPDATE",
+            "latency_ms": 3127.0633729982364,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "UPDATE",
+            "latency_ms": 2793.649524999637,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "UPDATE",
+            "latency_ms": 3395.1405030020396,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "UPDATE",
+            "latency_ms": 3264.204872000846,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "DELETE",
+            "latency_ms": 4287.633288000507,
+            "category": "retraction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "DELETE",
+            "latency_ms": 2728.895229000045,
+            "category": "retraction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "DELETE",
+            "latency_ms": 2513.893229999667,
+            "category": "retraction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "DELETE",
+            "latency_ms": 3812.0153910022054,
+            "category": "retraction"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "judge_model": "qwen2.5:7b-instruct-q4_K_M",
+    "prompt": "judge_v2.txt",
+    "results": {
+      "A_rule_only": {
+        "accuracy": 0.692,
+        "false_conflict_rate": 0.154,
+        "miss_rate": 0.0,
+        "p50_latency_ms": 14.43,
+        "p95_latency_ms": 17.11,
+        "per_category_accuracy": {
+          "unrelated": 1.0,
+          "related_new": 0.0,
+          "duplicate": 1.0,
+          "contradiction": 1.0,
+          "retraction": 0.0
+        },
+        "predictions": [
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 16.066741998656653,
+            "category": "unrelated"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 13.475375002599321,
+            "category": "unrelated"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 13.425108001683839,
+            "category": "unrelated"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 14.333008002722636,
+            "category": "unrelated"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 13.894843999878503,
+            "category": "unrelated"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 14.43753000057768,
+            "category": "unrelated"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "ADD",
+            "latency_ms": 17.526745999930426,
+            "category": "related_new"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "ADD",
+            "latency_ms": 17.11339200119255,
+            "category": "related_new"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "ADD",
+            "latency_ms": 15.217749998555519,
+            "category": "related_new"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "ADD",
+            "latency_ms": 14.429017999646021,
+            "category": "related_new"
+          },
+          {
+            "predicted": "NOOP",
+            "expected": "NOOP",
+            "latency_ms": 13.487361000443343,
+            "category": "duplicate"
+          },
+          {
+            "predicted": "NOOP",
+            "expected": "NOOP",
+            "latency_ms": 16.967840001598233,
+            "category": "duplicate"
+          },
+          {
+            "predicted": "NOOP",
+            "expected": "NOOP",
+            "latency_ms": 16.146198999194894,
+            "category": "duplicate"
+          },
+          {
+            "predicted": "NOOP",
+            "expected": "NOOP",
+            "latency_ms": 14.765660002012737,
+            "category": "duplicate"
+          },
+          {
+            "predicted": "NOOP",
+            "expected": "NOOP",
+            "latency_ms": 15.076070998475188,
+            "category": "duplicate"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "UPDATE",
+            "latency_ms": 15.872366999246879,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "UPDATE",
+            "latency_ms": 12.90324299770873,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "UPDATE",
+            "latency_ms": 14.237762999982806,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "UPDATE",
+            "latency_ms": 14.196555999660632,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "UPDATE",
+            "latency_ms": 13.912883998273173,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "UPDATE",
+            "latency_ms": 15.724536999186967,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "UPDATE",
+            "latency_ms": 14.04899299814133,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "DELETE",
+            "latency_ms": 13.862130002962658,
+            "category": "retraction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "DELETE",
+            "latency_ms": 14.592000999982702,
+            "category": "retraction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "DELETE",
+            "latency_ms": 13.981708998471731,
+            "category": "retraction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "DELETE",
+            "latency_ms": 13.658503001352074,
+            "category": "retraction"
+          }
+        ]
+      },
+      "B_llm_always": {
+        "accuracy": 0.692,
+        "false_conflict_rate": 0.0,
+        "miss_rate": 0.077,
+        "p50_latency_ms": 4585.07,
+        "p95_latency_ms": 6341.98,
+        "per_category_accuracy": {
+          "unrelated": 1.0,
+          "related_new": 1.0,
+          "duplicate": 0.6,
+          "contradiction": 0.143,
+          "retraction": 1.0
+        },
+        "predictions": [
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 10618.567523997626,
+            "category": "unrelated"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 4991.625186001329,
+            "category": "unrelated"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 4406.642881000153,
+            "category": "unrelated"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 6147.329483999783,
+            "category": "unrelated"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 4990.683809002803,
+            "category": "unrelated"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 5018.2526810021955,
+            "category": "unrelated"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 5223.464686001535,
+            "category": "related_new"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 5444.465100998059,
+            "category": "related_new"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 3727.2351360006724,
+            "category": "related_new"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 3941.445577002014,
+            "category": "related_new"
+          },
+          {
+            "predicted": "NOOP",
+            "expected": "NOOP",
+            "latency_ms": 3966.883307999524,
+            "category": "duplicate"
+          },
+          {
+            "predicted": "NOOP",
+            "expected": "NOOP",
+            "latency_ms": 4747.940654000558,
+            "category": "duplicate"
+          },
+          {
+            "predicted": "NOOP",
+            "expected": "NOOP",
+            "latency_ms": 3935.984711002675,
+            "category": "duplicate"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "NOOP",
+            "latency_ms": 6341.983439000614,
+            "category": "duplicate"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "NOOP",
+            "latency_ms": 4444.179177000478,
+            "category": "duplicate"
+          },
+          {
+            "predicted": "DELETE",
+            "expected": "UPDATE",
+            "latency_ms": 4449.429185999179,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "UPDATE",
+            "latency_ms": 3673.7618150000344,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "UPDATE",
+            "latency_ms": 5069.387103001645,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "DELETE",
+            "expected": "UPDATE",
+            "latency_ms": 5303.421008000441,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "DELETE",
+            "expected": "UPDATE",
+            "latency_ms": 4585.067657000764,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "UPDATE",
+            "latency_ms": 4557.458811003016,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "DELETE",
+            "expected": "UPDATE",
+            "latency_ms": 4137.722506002319,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "DELETE",
+            "expected": "DELETE",
+            "latency_ms": 4567.0128780002415,
+            "category": "retraction"
+          },
+          {
+            "predicted": "DELETE",
+            "expected": "DELETE",
+            "latency_ms": 5180.735558999004,
+            "category": "retraction"
+          },
+          {
+            "predicted": "DELETE",
+            "expected": "DELETE",
+            "latency_ms": 4250.83524600268,
+            "category": "retraction"
+          },
+          {
+            "predicted": "DELETE",
+            "expected": "DELETE",
+            "latency_ms": 4352.018335001048,
+            "category": "retraction"
+          }
+        ]
+      },
+      "C_tiered": {
+        "accuracy": 0.885,
+        "false_conflict_rate": 0.0,
+        "miss_rate": 0.0,
+        "p50_latency_ms": 4044.74,
+        "p95_latency_ms": 5194.26,
+        "per_category_accuracy": {
+          "unrelated": 1.0,
+          "related_new": 1.0,
+          "duplicate": 1.0,
+          "contradiction": 0.571,
+          "retraction": 1.0
+        },
+        "predictions": [
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 19.360081001650542,
+            "category": "unrelated"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 18.62581599925761,
+            "category": "unrelated"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 16.645421001157956,
+            "category": "unrelated"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 16.493020997586427,
+            "category": "unrelated"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 16.88489899970591,
+            "category": "unrelated"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 20.61775100082741,
+            "category": "unrelated"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 4649.326257000212,
+            "category": "related_new"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 5392.436090998672,
+            "category": "related_new"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 3632.4867839975923,
+            "category": "related_new"
+          },
+          {
+            "predicted": "ADD",
+            "expected": "ADD",
+            "latency_ms": 4331.593309998425,
+            "category": "related_new"
+          },
+          {
+            "predicted": "NOOP",
+            "expected": "NOOP",
+            "latency_ms": 19.789803001913242,
+            "category": "duplicate"
+          },
+          {
+            "predicted": "NOOP",
+            "expected": "NOOP",
+            "latency_ms": 23.187751998193562,
+            "category": "duplicate"
+          },
+          {
+            "predicted": "NOOP",
+            "expected": "NOOP",
+            "latency_ms": 20.896596000966383,
+            "category": "duplicate"
+          },
+          {
+            "predicted": "NOOP",
+            "expected": "NOOP",
+            "latency_ms": 22.82496100087883,
+            "category": "duplicate"
+          },
+          {
+            "predicted": "NOOP",
+            "expected": "NOOP",
+            "latency_ms": 21.471732998179505,
+            "category": "duplicate"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "UPDATE",
+            "latency_ms": 4097.1472909986915,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "UPDATE",
+            "latency_ms": 3835.840242001723,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "UPDATE",
+            "latency_ms": 4127.684277998924,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "DELETE",
+            "expected": "UPDATE",
+            "latency_ms": 4472.478529998625,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "DELETE",
+            "expected": "UPDATE",
+            "latency_ms": 4044.7447999977157,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "UPDATE",
+            "expected": "UPDATE",
+            "latency_ms": 4874.199376001343,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "DELETE",
+            "expected": "UPDATE",
+            "latency_ms": 4657.973724002659,
+            "category": "contradiction"
+          },
+          {
+            "predicted": "DELETE",
+            "expected": "DELETE",
+            "latency_ms": 4631.81017199895,
+            "category": "retraction"
+          },
+          {
+            "predicted": "DELETE",
+            "expected": "DELETE",
+            "latency_ms": 5194.264063000446,
+            "category": "retraction"
+          },
+          {
+            "predicted": "DELETE",
+            "expected": "DELETE",
+            "latency_ms": 4312.600055996882,
+            "category": "retraction"
+          },
+          {
+            "predicted": "DELETE",
+            "expected": "DELETE",
+            "latency_ms": 4381.377023000823,
+            "category": "retraction"
+          }
+        ]
+      }
+    }
+  }
+]
