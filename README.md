@@ -2,6 +2,8 @@
 
 External long-term memory for LLMs: extract facts from conversation, resolve conflicts cheaply, retrieve with decay-aware ranking.
 
+[engram](https://github.com/NithishKannanM/engram) uses ExMem as one of its memory backends; this repository is ExMem's standalone origin.
+
 ## Design
 - **Write path**: Ollama extraction -> Pydantic validation -> embed -> similarity search over live memories -> **tiered conflict resolver**
   (sim < 0.50 -> ADD, sim > 0.92 -> NOOP, otherwise a single LLM judge call) -> ChromaDB.
